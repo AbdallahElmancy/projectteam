@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class=" w-75 mx-auto">
+    <div class=" mt-2">
+        <label for="purdactName"> Purdact prodact:</label>
+        <input type="text" id="purdactName" class=" form-control">
+        <small class=" text-muted">put here your prdact</small>
+    </div>
+    <div class=" mt-2">
+        <label for="purdactPrice"> price prodact:</label>
+        <input type="number" id="purdactPrice" class=" form-control">
+        <small class=" text-muted">put here your price</small>
+    </div>
+    <div class="mt-2">
+        <label for="purdactCategory"> Category prodact:</label>
+        <input type="text" id="purdactCategory" class=" form-control">
+        <small class=" text-muted">put here your type</small>
+    </div>
+    <div class="mt-2">
+        <label for="purdactDesc"> Desc prodact:</label>
+        <textarea type="text" id="purdactDesc" class=" form-control mh-100"></textarea>
+    </div>
+    <button class="btn btn-outline-info mt-3" onclick="addProduct();" id="mainBtn">Add prodact</button>
+    <div class="mt-2">
+        <label for="searchProdauct"> search prodact:</label>
+        <input onkeyup="searchProduct(this.value);" type="text" id="searchProdauct" class=" form-control mh-100"></input>
+    </div>
+    <table class=" table mt-3">
+
+        <thead>
+            <th>index</th>
+            <th>prudact</th>
+            <th>price</th>
+            <th>category</th>
+            <th>desc</th>
+            <th>update</th>
+            <th>delete</th>
+        </thead>
+        <tbody id="tableBody"></tbody>
+
+       
+                
+
+    </table>
+</div>
+
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
